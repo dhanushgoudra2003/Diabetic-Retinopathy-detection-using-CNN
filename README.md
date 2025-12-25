@@ -22,23 +22,19 @@ The model is designed to capture both local lesion-level details and global stru
 
 🧠 Methodology
 
-Image Preprocessing
+1) Image Preprocessing
 
 Contrast Limited Adaptive Histogram Equalization (CLAHE)
-
 Normalization
-
 Data augmentation for better generalization
 
-Model Architecture
+2) Model Architecture
 
 CNN backbone based on EfficientNet-B0
-
 Hybrid Attention Mechanism (Channel + Spatial attention)
-
 Captures fine-grained retinal features and global context
 
-Training
+3) Training
 
 Optimizer: Adam
 
@@ -46,7 +42,7 @@ Loss Function: Cross-Entropy Loss
 
 Framework: PyTorch
 
-Evaluation
+4) Evaluation
 
 Accuracy
 
@@ -57,9 +53,9 @@ Precision & Recall
 
 📊 Results
 
-Accuracy: 75.78%
+1) Accuracy: 75.78%
 
-Quadratic Weighted Kappa (QWK): 0.8581
+2) Quadratic Weighted Kappa (QWK): 0.8581
 
 The high QWK score indicates strong agreement between predicted and actual disease stages, making the model suitable for medical screening assistance.
 
@@ -102,20 +98,20 @@ Retinal fundus images graded into 5 severity levels:
 
 🚀 Applications
 
-Early diagnosis and screening of diabetic retinopathy
+1) Early diagnosis and screening of diabetic retinopathy
 
-Tele-ophthalmology for remote and rural healthcare
+2) Tele-ophthalmology for remote and rural healthcare
 
-Clinical decision support for ophthalmologists
+3) Clinical decision support for ophthalmologists
 
-Cost-effective large-scale screening programs
+4) Cost-effective large-scale screening programs
 
 
 🔮 Future Scope
 
-Improve performance using advanced architectures (DenseNet, Vision Transformers)
+1) Improve performance using advanced architectures (DenseNet, Vision Transformers)
 
-Address class imbalance using focal loss or GAN-based image generation
+2) Address class imbalance using focal loss or GAN-based image generation
 
 Add explainability using Grad-CAM or LIME
 
