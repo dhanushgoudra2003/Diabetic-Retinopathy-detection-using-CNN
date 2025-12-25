@@ -25,7 +25,9 @@ The model is designed to capture both local lesion-level details and global stru
 1) Image Preprocessing
 
 Contrast Limited Adaptive Histogram Equalization (CLAHE)
+
 Normalization
+
 Data augmentation for better generalization
 
 2) Model Architecture
@@ -107,14 +109,3 @@ Retinal fundus images graded into 5 severity levels:
 4) Cost-effective large-scale screening programs
 
 
-🔮 Future Scope
-
-1) Improve performance using advanced architectures (DenseNet, Vision Transformers)
-
-2) Address class imbalance using focal loss or GAN-based image generation
-
-Add explainability using Grad-CAM or LIME
-
-Deploy as a web or mobile application
-
-Evaluate on external clinical datasets
