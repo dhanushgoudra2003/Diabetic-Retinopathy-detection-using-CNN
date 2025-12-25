@@ -33,7 +33,9 @@ Data augmentation for better generalization
 2) Model Architecture
 
 CNN backbone based on EfficientNet-B0
+
 Hybrid Attention Mechanism (Channel + Spatial attention)
+
 Captures fine-grained retinal features and global context
 
 3) Training
