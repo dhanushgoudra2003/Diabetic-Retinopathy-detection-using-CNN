@@ -1,113 +1,175 @@
-🩺 Hybrid Attention-Based CNN for Diabetic Retinopathy Detection
+# 🩺 Diabetic Retinopathy Detection using Deep Learning
 
-📌 Overview
+<p align="center">
+  <img src="https://img.shields.io/badge/Deep%20Learning-TensorFlow-orange">
+  <img src="https://img.shields.io/badge/Domain-Healthcare-blue">
+  <img src="https://img.shields.io/badge/Status-Completed-brightgreen">
+  <img src="https://img.shields.io/badge/Dataset-Kaggle-yellow">
+</p>
 
-Diabetic Retinopathy (DR) is a leading cause of vision loss worldwide. Early and accurate detection is critical for preventing irreversible damage. This project presents a CNN-based deep learning approach with hybrid attention mechanisms to automatically detect and classify diabetic retinopathy from retinal fundus images.
+---
 
-The model is designed to capture both local lesion-level details and global structural patterns, enabling effective multi-stage classification of diabetic retinopathy severity.
+## 📌 Overview
+
+Diabetic Retinopathy (DR) is a serious diabetes complication that affects the eyes and can lead to **permanent blindness** if not detected early.
+
+This project uses **Deep Learning (CNNs)** to automatically classify retinal fundus images into different stages of DR severity, helping in **early diagnosis and clinical decision support**.
+
+---
+
+## 🎯 Objectives
+
+* Detect Diabetic Retinopathy from retinal images
+* Classify disease severity into 5 stages
+* Handle real-world challenges like class imbalance
+* Build a scalable and reusable deep learning pipeline
+
+---
+
+## 🚀 Key Features
+
+* 📥 Automated dataset download using Kaggle API
+* 🧹 Robust data preprocessing pipeline
+* ⚖️ Class imbalance handling techniques
+* 🔄 Advanced image augmentation
+* 📊 Data visualization & analysis
+* 🧠 CNN-based classification model
+* 📈 Improved generalization and performance
+
+---
+
+## 📂 Dataset
+
+**Dataset:** *Diabetic Retinopathy 2015 Dataset (Colored & Resized)*
+Source: Kaggle
+
+### 🏷️ Classes
+
+| Label | Description      |
+| ----- | ---------------- |
+| 0     | No DR            |
+| 1     | Mild             |
+| 2     | Moderate         |
+| 3     | Severe           |
+| 4     | Proliferative DR |
+
+---
+
+## 🛠️ Tech Stack
+
+| Category         | Tools             |
+| ---------------- | ----------------- |
+| Language         | Python            |
+| Deep Learning    | TensorFlow, Keras |
+| Image Processing | OpenCV            |
+| Data Handling    | Pandas, NumPy     |
+| Visualization    | Matplotlib        |
+
+---
+
+## ⚙️ Project Workflow
+
+### 1️⃣ Dataset Acquisition
+
+* Download dataset using Kaggle API
+* Extract and organize into directories
+
+### 2️⃣ Data Preprocessing
+
+* Image-label mapping
+* Data cleaning and validation
+* Structured dataset creation
+
+### 3️⃣ Handling Class Imbalance
+
+* Reduced dominance of majority class
+* Applied sampling techniques
+
+### 4️⃣ Data Augmentation
+
+* Rotation
+* Width & height shift
+* Zoom
+* Horizontal flip
+
+### 5️⃣ Visualization
+
+* Class distribution analysis
+* Before & after balancing comparison
+
+### 6️⃣ Model Training
+
+* CNN-based architecture
+* Trained on augmented dataset
+* Optimized for classification accuracy
+
+---
+
+## 🧠 Model Architecture (Example)
+
+* Convolutional Layers
+* MaxPooling Layers
+* Dropout for regularization
+* Fully Connected Layers
+* Softmax Output (5 classes)
+
+---
+
+## 📊 Results
+
+* Improved dataset balance
+* Better generalization on unseen data
+* Accurate classification of DR stages
 
 
-🎯 Objectives
+---
 
-1) Detect diabetic retinopathy from retinal fundus images
+## ▶️ How to Run
 
-2) Perform multi-stage classification of DR severity
+### 1️⃣ Clone Repository
 
-3) Enhance image quality using advanced preprocessing techniques
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+```
 
-4) Improve model performance using attention mechanisms
+### 2️⃣ Install Dependencies
 
-5) Evaluate model effectiveness using robust medical metrics
+```bash
+pip install -r requirements.txt
+```
 
+### 3️⃣ Setup Kaggle API
 
-🧠 Methodology
+* Download `kaggle.json` from Kaggle
+* Place it in:
 
-1) Image Preprocessing
+```bash
+~/.kaggle/kaggle.json
+```
 
-Contrast Limited Adaptive Histogram Equalization (CLAHE)
+### 4️⃣ Run the Project
 
-Normalization
+```bash
+jupyter notebook notebooks/Project_code.ipynb
+```
 
-Data augmentation for better generalization
+---
 
-2) Model Architecture
+## 📈 Future Improvements
 
-CNN backbone based on EfficientNet-B0
+* 🔍 Use Transfer Learning (ResNet, EfficientNet)
+* ⚡ Hyperparameter tuning
+* 🌐 Deploy as a web app (Streamlit / Flask)
+* 📱 Mobile-based diagnosis system
+* 🧪 Improve performance on minority classes
 
-Hybrid Attention Mechanism (Channel + Spatial attention)
+---
 
-Captures fine-grained retinal features and global context
+## 💡 Use Cases
 
-3) Training
-
-Optimizer: Adam
-
-Loss Function: Cross-Entropy Loss
-
-Framework: PyTorch
-
-4) Evaluation
-
-Accuracy
-
-Quadratic Weighted Kappa (QWK)
-
-Precision & Recall
-
-
-📊 Results
-
-1) Accuracy: 75.78%
-
-2) Quadratic Weighted Kappa (QWK): 0.8581
-
-The high QWK score indicates strong agreement between predicted and actual disease stages, making the model suitable for medical screening assistance.
-
-
-🛠 Tech Stack
-
-Language: Python
-
-Deep Learning: PyTorch, Torchvision
-
-Computer Vision: OpenCV
-
-Machine Learning: scikit-learn
-
-Data Processing: NumPy, Pandas
-
-Augmentation: TensorFlow (Keras ImageDataGenerator)
-
-Visualization: Matplotlib
-
-Platform: Google Colab
-
-
-📂 Dataset
-
-Kaggle Diabetic Retinopathy Dataset
-
-Retinal fundus images graded into 5 severity levels:
-
-0: No DR
-
-1: Mild
-
-2: Moderate
-
-3: Severe
-
-4: Proliferative DR
-
-
-🚀 Applications
-
-1) Early diagnosis and screening of diabetic retinopathy
-
-2) Tele-ophthalmology for remote and rural healthcare
-
-3) Clinical decision support for ophthalmologists
-
-4) Cost-effective large-scale screening programs
-
+* Early detection of diabetic eye disease
+* Assist ophthalmologists in diagnosis
+* Healthcare AI applications
+* Medical imaging research
 
