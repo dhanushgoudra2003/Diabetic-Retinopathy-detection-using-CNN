@@ -119,8 +119,8 @@ Source: Kaggle
 ### 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/dhanushgoudra2003/Diabetic-Retinopathy-detection-using-CNN.git
+cd Diabetic-Retinopathy-detection-using-CNN
 ```
 
 ### 2️⃣ Install Dependencies
