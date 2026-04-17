@@ -1,13 +1,3 @@
-# 🩺 Diabetic Retinopathy Detection using Deep Learning
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Deep%20Learning-TensorFlow-orange">
-  <img src="https://img.shields.io/badge/Domain-Healthcare-blue">
-  <img src="https://img.shields.io/badge/Status-Completed-brightgreen">
-  <img src="https://img.shields.io/badge/Dataset-Kaggle-yellow">
-</p>
-
----
 
 ## 📌 Overview
 
